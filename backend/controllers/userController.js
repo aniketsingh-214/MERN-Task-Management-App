@@ -7,7 +7,7 @@ import jwt from "jsonwebtoken";
 
 
 const domain =
-  process.env.NODE_ENV === "production" ? "taskmanger-server-qg2o.onrender.com" : "localhost";
+  process.env.NODE_ENV === "production" ? "https://mern-task-management-app-aniket-singhs-projects-23cba402.vercel.app" : "localhost";
 
 const signupUser = asyncHandler(async (req, res) => {
   const { firstname, lastname, email, password } = req.body;
